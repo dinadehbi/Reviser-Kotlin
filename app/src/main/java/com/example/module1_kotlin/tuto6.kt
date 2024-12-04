@@ -1,4 +1,4 @@
-package com.example.module1_kotlin
+/*package com.example.module1_kotlin
 
 import android.content.Intent
 import android.net.Uri
@@ -42,4 +42,4 @@ fun AsyncDataLoaderPreview() {
     Tuto6Theme {
         AsyncDataLoader()
     }
-}
+}*/

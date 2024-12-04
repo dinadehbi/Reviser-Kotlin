@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Module1KOtlin"
         tools:targetApi="31">
         <activity
-            android:name=".`Tutu3PLus.kt`"
+            android:name=".Tuto3Plus"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Module1KOtlin">

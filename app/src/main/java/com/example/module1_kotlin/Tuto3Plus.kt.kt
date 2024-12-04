@@ -1,6 +1,5 @@
 package com.example.module1_kotlin
 
-
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -17,13 +16,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.module1_kotlin.ui.theme.Module1KOtlinTheme
 
-class `Tuto3Plus.kt` : ComponentActivity() {
+class Tuto3Plus : ComponentActivity() { // Suppression des backticks
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             Module1KOtlinTheme {
                 InteractiveButtonsApp()
-
             }
         }
     }
@@ -80,15 +78,9 @@ class `Tuto3Plus.kt` : ComponentActivity() {
         }
     }
 
-
-@Preview(showBackground = true)
-@Composable
-fun PreviewInteractiveButtonsApp() {
-    InteractiveButtonsApp()
+    @Preview(showBackground = true)
+    @Composable
+    fun PreviewInteractiveButtonsApp() {
+        InteractiveButtonsApp()
+    }
 }
-
-
-
-}
-
-
