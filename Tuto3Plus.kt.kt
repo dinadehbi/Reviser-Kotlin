@@ -1,6 +1,5 @@
 package com.example.module1_kotlin
 
-
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -13,17 +12,16 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.module1_kotlin.ui.theme.Module1KOtlinTheme
 
-class `Tuto3Plus.kt` : ComponentActivity() {
+class Tuto3Plus : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             Module1KOtlinTheme {
                 InteractiveButtonsApp()
-
             }
         }
     }
@@ -80,15 +78,9 @@ class `Tuto3Plus.kt` : ComponentActivity() {
         }
     }
 
-
-@Preview(showBackground = true)
-@Composable
-fun PreviewInteractiveButtonsApp() {
-    InteractiveButtonsApp()
+    @Preview(showBackground = true)
+    @Composable
+    fun PreviewInteractiveButtonsApp() {
+        InteractiveButtonsApp()
+    }
 }
-
-
-
-}
-
-
