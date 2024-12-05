@@ -15,6 +15,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.module1_kotlin.ui.theme.Module1KOtlinTheme
 
+/*
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,3 +79,36 @@ fun PreviewFunction() {
             InteractiveForm()
         }
 }
+*/
+
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Module1KOtlinTheme {
+                // App Content
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                        NameForm()
+                }
+            }
+        }
+    }
+
+    @Composable
+    fun NameForm(){
+        Text(
+            text = "Form"
+        )
+
+    }
+
+    @Preview(showBackground = true)
+    @Composable
+    fun PreviewFunction(){
+        NameForm()
+    }
+}
+
+
+
